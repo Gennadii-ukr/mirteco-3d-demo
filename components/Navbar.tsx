@@ -1,4 +1,5 @@
-import LanguageSwitcher from "@/components/LanguageSwitcher";
+import LanguageSwitcher from "./LanguageSwitcher";
+
 import type { Locale } from "@/i18n";
 
 export default function Navbar({ locale, t }: { locale: Locale; t: any }) {
