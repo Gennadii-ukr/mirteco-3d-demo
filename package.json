@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start"
   },
   "dependencies": {
     "next": "15.0.0",
@@ -15,5 +14,9 @@
     "three": "^0.170.0",
     "@react-three/fiber": "^8.15.12",
     "@react-three/drei": "^9.88.17"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "@types/node": "^20.11.0"
   }
 }
