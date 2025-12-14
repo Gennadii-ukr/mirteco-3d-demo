@@ -1,0 +1,75 @@
+{
+  "brandLine": "MIRTECO • Radiadores eléctricos de aluminio premium",
+  "navTagline": "Radiadores eléctricos de aluminio",
+  "navWhy": "Por qué MIRTECO",
+  "navCatalog": "Catálogo",
+  "navSelect": "Selección por estancia",
+  "heroTitle": "Radiadores eléctricos de aluminio premium.\nDiseñados con filosofía Apple.",
+  "heroSubtitle": "Calor silencioso y uniforme, seguridad en la que puedes confiar, certificación CE y componentes de calidad — con una experiencia 3D rápida y moderna.",
+  "viewModels": "Ver modelos",
+  "chooseRoom": "Elegir por estancia",
+  "certs": "Certificados y garantía",
+  "heroBadges": [
+    "Certificación CE",
+    "Válvula de seguridad",
+    "Funcionamiento silencioso",
+    "Calor uniforme"
+  ],
+  "heroHint": "Consejo: gira el radiador con el ratón/dedo. Añadiremos un interruptor 3D on/off para dispositivos menos potentes.",
+  "whyTitle": "Por qué MIRTECO",
+  "features": [
+    {
+      "title": "Certificados CE",
+      "text": "Pensado para cumplir requisitos europeos y sentirse premium en cada detalle."
+    },
+    {
+      "title": "Seguridad y fiabilidad",
+      "text": "Ingeniería primero: sistemas de protección y válvula de seguridad para tranquilidad a largo plazo."
+    },
+    {
+      "title": "Ecológico",
+      "text": "Calefacción eficiente con enfoque en confort y consumo responsable."
+    },
+    {
+      "title": "Confort autónomo y eficiente",
+      "text": "Sin sistemas complejos — calefacción eléctrica limpia y sencilla."
+    },
+    {
+      "title": "Instalación fácil",
+      "text": "Montaje rápido y aspecto ordenado — pensado para hogares reales."
+    },
+    {
+      "title": "Ahorro con MIRTECO",
+      "text": "Modos inteligentes ayudan a reducir consumo sin perder confort."
+    },
+    {
+      "title": "Sin tuberías ni caldera",
+      "text": "Infraestructura mínima — máxima comodidad."
+    },
+    {
+      "title": "Control intuitivo",
+      "text": "Interfaz clara y modos para el día a día."
+    },
+    {
+      "title": "Pagos flexibles",
+      "text": "Opciones flexibles de compra (configurable por mercado)."
+    },
+    {
+      "title": "Componentes de marcas globales",
+      "text": "Piezas de calidad y estándares de montaje — la diferencia premium."
+    }
+  ],
+  "catalogTitle": "Catálogo",
+  "catalogNote": "Datos demo. Siguiente: modelos reales, precios, stock y entrega.",
+  "filterLabel": "Filtro",
+  "filterAll": "Todos",
+  "filter900": "900W+",
+  "filter1300": "1300W+",
+  "requestPrice": "Solicitar precio",
+  "details": "Más información",
+  "calcTitle": "Selección según la estancia (siguiente paso)",
+  "calcText": "Introduce el tamaño y condiciones de la habitación — recomendamos potencia y modelo. Después conectamos formulario real y analítica.",
+  "calcCTA": "Solicitar recomendación",
+  "calcHint": "* Botón demo por ahora — lo sustituimos por un formulario real.",
+  "galleryTitle": "Fotos reales del producto"
+}

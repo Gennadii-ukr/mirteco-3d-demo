@@ -1,0 +1,75 @@
+{
+  "brandLine": "MIRTECO • Premium electric aluminum radiators",
+  "navTagline": "Electric aluminum radiators",
+  "navWhy": "Why MIRTECO",
+  "navCatalog": "Catalog",
+  "navSelect": "Room selection",
+  "heroTitle": "Premium electric aluminum radiators.\nBuilt with an Apple-grade mindset.",
+  "heroSubtitle": "Silent and even heating, safety you can trust, CE certification and premium components — presented in a fast, modern 3D experience.",
+  "viewModels": "View models",
+  "chooseRoom": "Choose by room",
+  "certs": "Certificates & warranty",
+  "heroBadges": [
+    "CE certified",
+    "Safety valve",
+    "Silent operation",
+    "Even heat distribution"
+  ],
+  "heroHint": "Tip: rotate the radiator with your mouse/finger. We’ll add a 3D on/off toggle for low-end devices.",
+  "whyTitle": "Why MIRTECO",
+  "features": [
+    {
+      "title": "CE certificates",
+      "text": "Built to meet European requirements and to feel premium in every detail."
+    },
+    {
+      "title": "Safety & reliability",
+      "text": "Engineering first: protection systems and a safety valve for long-term confidence."
+    },
+    {
+      "title": "Eco-friendly",
+      "text": "Efficient heating with a focus on comfort and mindful energy use."
+    },
+    {
+      "title": "Autonomous, efficient comfort",
+      "text": "No complex boiler system — simple, clean electric heating."
+    },
+    {
+      "title": "Easy installation",
+      "text": "Fast setup with a neat look — made for real homes and apartments."
+    },
+    {
+      "title": "Savings with MIRTECO heating",
+      "text": "Smart control modes help reduce consumption without losing comfort."
+    },
+    {
+      "title": "No pipes, no boiler",
+      "text": "Minimal infrastructure — maximum convenience."
+    },
+    {
+      "title": "Intuitive control",
+      "text": "Clear interface and modes for everyday use."
+    },
+    {
+      "title": "Flexible payments",
+      "text": "Flexible purchasing options (can be configured per market)."
+    },
+    {
+      "title": "Components from global brands",
+      "text": "Quality parts and assembly standards — the premium difference."
+    }
+  ],
+  "catalogTitle": "Catalog",
+  "catalogNote": "Demo data now. Next: real models, prices, availability, delivery.",
+  "filterLabel": "Filter",
+  "filterAll": "All",
+  "filter900": "900W+",
+  "filter1300": "1300W+",
+  "requestPrice": "Request price",
+  "details": "Details",
+  "calcTitle": "Room-based selection (next step)",
+  "calcText": "Enter room size and conditions — we recommend the optimal power and the right model. Then we connect a real request form and analytics.",
+  "calcCTA": "Request a recommendation",
+  "calcHint": "* Demo button for now — we’ll replace it with a real lead form.",
+  "galleryTitle": "Real product photos"
+}
