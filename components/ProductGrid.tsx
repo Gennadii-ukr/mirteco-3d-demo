@@ -1,7 +1,8 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { products } from "@/data/products";
+import { products } from "../data/products";
+
 
 export default function ProductGrid({ t }: { t: any }) {
   const [minPower, setMinPower] = useState(0);
