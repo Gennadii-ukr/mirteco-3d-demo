@@ -1,5 +1,5 @@
 import Navbar from "../../components/Navbar";
-import Hero3D from "../../components/Hero3D";
+import dynamic from "next/dynamic";
 import FeatureBlocks from "../../components/FeatureBlocks";
 import ProductGrid from "../../components/ProductGrid";
 import Footer from "../../components/Footer";
