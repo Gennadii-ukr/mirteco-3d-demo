@@ -6,8 +6,9 @@ import Footer from "../../components/Footer";
 
 import type { Locale } from "@/i18n";
 
-import en from "@/locales/en.json";
-import es from "@/locales/es.json";
+import en from "../../locales/en.json";
+import es from "../../locales/es.json";
+
 
 function dict(locale: Locale) {
   return locale === "es" ? es : en;
