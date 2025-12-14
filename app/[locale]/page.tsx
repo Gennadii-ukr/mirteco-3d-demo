@@ -1,8 +1,9 @@
-import Navbar from "@/components/Navbar";
-import Hero3D from "@/components/Hero3D";
-import FeatureBlocks from "@/components/FeatureBlocks";
-import ProductGrid from "@/components/ProductGrid";
-import Footer from "@/components/Footer";
+import Navbar from "../../components/Navbar";
+import Hero3D from "../../components/Hero3D";
+import FeatureBlocks from "../../components/FeatureBlocks";
+import ProductGrid from "../../components/ProductGrid";
+import Footer from "../../components/Footer";
+
 import type { Locale } from "@/i18n";
 
 import en from "@/locales/en.json";
