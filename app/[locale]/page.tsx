@@ -1,12 +1,18 @@
 import dynamic from "next/dynamic";
-
 import Navbar from "../../components/Navbar";
+
+const Hero3D = dynamic(
+  () => import("../../components/Hero3D"),
+  { ssr: false }
+);
+
 import FeatureBlocks from "../../components/FeatureBlocks";
 import ProductGrid from "../../components/ProductGrid";
 import Footer from "../../components/Footer";
 
 import en from "../../locales/en.json";
 import es from "../../locales/es.json";
+
 
 const Hero3D = dynamic(() => import("../../components/Hero3D"), { ssr: false });
 
