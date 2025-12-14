@@ -1,25 +1,10 @@
-import Navbar from "../../components/Navbar";
-import Hero3D from "../../components/Hero3D";
-import FeatureBlocks from "../../components/FeatureBlocks";
-import ProductGrid from "../../components/ProductGrid";
-import Footer from "../../components/Footer";
-
-import type { Locale } from "@/i18n";
-
-import en from "../../locales/en.json";
-import es from "../../locales/es.json";
-
-
-function dict(locale: Locale) {
-  return locale === "es" ? es : en;
-}
-
-export default function Page({ params }: { params: { locale: Locale } }) {
-  const t = dict(params.locale);
+export default function Page({ params }: any) {
+  const locale = params?.locale === "es" ? "es" : "en";
+  const t = locale === "es" ? es : en;
 
   return (
     <>
-      <Navbar locale={params.locale} t={t} />
+      <Navbar locale={locale} t={t} />
 
       <main>
         <section className="section">
@@ -42,14 +27,6 @@ export default function Page({ params }: { params: { locale: Locale } }) {
                   {t.heroBadges.map((b: string) => (
                     <span className="badge" key={b}>{b}</span>
                   ))}
-                </div>
-
-                <div className="card" style={{ marginTop: 16 }}>
-                  <div style={{ fontWeight: 800, marginBottom: 10 }}>{t.galleryTitle}</div>
-                  <div className="hero-gallery">
-                    <img src="/images/radiator-1.jpg" alt="MIRTECO radiator" />
-                    <img src="/images/radiator-2.jpg" alt="MIRTECO radiator" />
-                  </div>
                 </div>
               </div>
 
@@ -90,7 +67,7 @@ export default function Page({ params }: { params: { locale: Locale } }) {
               <h2 className="h2">{t.calcTitle}</h2>
               <p className="p">{t.calcText}</p>
               <div className="row" style={{ marginTop: 16 }}>
-                <button className="btn primary" onClick={() => alert("Next step: real lead form")}>
+                <button className="btn primary">
                   {t.calcCTA}
                 </button>
                 <span className="small">{t.calcHint}</span>
@@ -104,3 +81,4 @@ export default function Page({ params }: { params: { locale: Locale } }) {
     </>
   );
 }
+
