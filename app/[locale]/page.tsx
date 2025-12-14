@@ -1,3 +1,12 @@
+import Navbar from "../../components/Navbar";
+import Hero3D from "../../components/Hero3D";
+import FeatureBlocks from "../../components/FeatureBlocks";
+import ProductGrid from "../../components/ProductGrid";
+import Footer from "../../components/Footer";
+
+import en from "../../locales/en.json";
+import es from "../../locales/es.json";
+
 export default function Page({ params }: any) {
   const locale = params?.locale === "es" ? "es" : "en";
   const t = locale === "es" ? es : en;
@@ -12,27 +21,40 @@ export default function Page({ params }: any) {
             <div className="grid cols-2" style={{ alignItems: "center" }}>
               <div>
                 <span className="badge">{t.brandLine}</span>
-                <h1 className="h1" style={{ marginTop: 12, whiteSpace: "pre-line" }}>
+                <h1
+                  className="h1"
+                  style={{ marginTop: 12, whiteSpace: "pre-line" }}
+                >
                   {t.heroTitle}
                 </h1>
                 <p className="p">{t.heroSubtitle}</p>
 
                 <div className="row" style={{ marginTop: 18 }}>
-                  <a className="btn primary" href="#catalog">{t.viewModels}</a>
-                  <a className="btn" href="#calc">{t.chooseRoom}</a>
-                  <a className="btn" href="#trust">{t.certs}</a>
+                  <a className="btn primary" href="#catalog">
+                    {t.viewModels}
+                  </a>
+                  <a className="btn" href="#calc">
+                    {t.chooseRoom}
+                  </a>
+                  <a className="btn" href="#trust">
+                    {t.certs}
+                  </a>
                 </div>
 
                 <div className="row" style={{ marginTop: 16 }}>
                   {t.heroBadges.map((b: string) => (
-                    <span className="badge" key={b}>{b}</span>
+                    <span className="badge" key={b}>
+                      {b}
+                    </span>
                   ))}
                 </div>
               </div>
 
               <div className="card" style={{ padding: 12 }}>
                 <Hero3D />
-                <div className="small" style={{ marginTop: 10 }}>{t.heroHint}</div>
+                <div className="small" style={{ marginTop: 10 }}>
+                  {t.heroHint}
+                </div>
               </div>
             </div>
           </div>
@@ -67,9 +89,7 @@ export default function Page({ params }: any) {
               <h2 className="h2">{t.calcTitle}</h2>
               <p className="p">{t.calcText}</p>
               <div className="row" style={{ marginTop: 16 }}>
-                <button className="btn primary">
-                  {t.calcCTA}
-                </button>
+                <button className="btn primary">{t.calcCTA}</button>
                 <span className="small">{t.calcHint}</span>
               </div>
             </div>
@@ -81,4 +101,5 @@ export default function Page({ params }: any) {
     </>
   );
 }
+
 
