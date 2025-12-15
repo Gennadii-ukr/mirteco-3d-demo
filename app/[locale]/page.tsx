@@ -8,11 +8,23 @@ import Footer from "../../components/Footer";
 import en from "../../locales/en.json";
 import es from "../../locales/es.json";
 
-const Hero3D = dynamic(() => import("../../components/Hero3D"), { ssr: false });
+const Hero3D = dynamic(() => import("../../components/Hero3D"), {
+  ssr: false,
+  loading: () => (
+    <div
+      style={{
+        height: 420,
+        width: "100%",
+        borderRadius: 14,
+        background: "rgba(0,0,0,0.04)",
+      }}
+    />
+  ),
+});
 
 export default function Page({ params }: any) {
   const locale = params?.locale === "es" ? "es" : "en";
-  const t = locale === "es" ? es : en;
+  const t: any = locale === "es" ? es : en;
 
   return (
     <>
@@ -24,24 +36,20 @@ export default function Page({ params }: any) {
             <div className="grid cols-2" style={{ alignItems: "center" }}>
               <div>
                 <span className="badge">{t.brandLine}</span>
-
                 <h1 className="h1" style={{ marginTop: 12, whiteSpace: "pre-line" }}>
                   {t.heroTitle}
                 </h1>
-
-                <p className="p" style={{ marginTop: 12 }}>
-                  {t.heroSubtitle}
-                </p>
+                <p className="p">{t.heroSubtitle}</p>
 
                 <div className="row" style={{ marginTop: 18 }}>
                   <a className="btn primary" href="#catalog">
-                    {t.viewModels}
+                    {t.ctaViewModels}
                   </a>
                   <a className="btn" href="#chooseRoom">
-                    {t.chooseRoom}
+                    {t.ctaChooseRoom}
                   </a>
                   <a className="btn" href="#trust">
-                    {t.certs}
+                    {t.ctaCerts}
                   </a>
                 </div>
 
@@ -70,22 +78,6 @@ export default function Page({ params }: any) {
         <section id="catalog" className="section">
           <div className="container">
             <ProductGrid locale={locale} t={t} />
-          </div>
-        </section>
-
-        <section id="chooseRoom" className="section">
-          <div className="container">
-            <div className="card" style={{ padding: 16 }}>
-              <h2 className="h2">{t.roomTitle}</h2>
-              <p className="p" style={{ marginTop: 8 }}>
-                {t.roomText}
-              </p>
-              <div className="row" style={{ marginTop: 12 }}>
-                <a className="btn" href="/contact-us">
-                  {t.contactUs}
-                </a>
-              </div>
-            </div>
           </div>
         </section>
       </main>
