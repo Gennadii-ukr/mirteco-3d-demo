@@ -8,29 +8,24 @@ import Footer from "../../components/Footer";
 import en from "../../locales/en.json";
 import es from "../../locales/es.json";
 
+// Важно: объявляем Hero3D РОВНО ОДИН РАЗ
 const Hero3D = dynamic(() => import("../../components/Hero3D"), {
   ssr: false,
   loading: () => (
-    <div
-      style={{
-        height: 420,
-        width: "100%",
-        borderRadius: 14,
-        background: "rgba(0,0,0,0.04)",
-      }}
-    />
+    <div style={{ height: 420, width: "100%", borderRadius: 14, background: "rgba(0,0,0,0.04)" }} />
   ),
 });
 
 export default function Page({ params }: any) {
   const locale = params?.locale === "es" ? "es" : "en";
-  const t: any = locale === "es" ? es : en;
+  const t = locale === "es" ? (es as any) : (en as any);
 
   return (
     <>
       <Navbar locale={locale} t={t} />
 
       <main>
+        {/* твой Hero-блок */}
         <section className="section">
           <div className="container">
             <div className="grid cols-2" style={{ alignItems: "center" }}>
@@ -43,13 +38,13 @@ export default function Page({ params }: any) {
 
                 <div className="row" style={{ marginTop: 18 }}>
                   <a className="btn primary" href="#catalog">
-                    {t.ctaViewModels}
+                    {t.viewModels}
                   </a>
-                  <a className="btn" href="#chooseRoom">
-                    {t.ctaChooseRoom}
+                  <a className="btn" href="#calc">
+                    {t.chooseRoom}
                   </a>
                   <a className="btn" href="#trust">
-                    {t.ctaCerts}
+                    {t.certs}
                   </a>
                 </div>
 
@@ -62,24 +57,15 @@ export default function Page({ params }: any) {
                 </div>
               </div>
 
-              <div className="card" style={{ padding: 12 }}>
+              <div>
                 <Hero3D />
               </div>
             </div>
           </div>
         </section>
 
-        <section id="trust" className="section">
-          <div className="container">
-            <FeatureBlocks t={t} />
-          </div>
-        </section>
-
-        <section id="catalog" className="section">
-          <div className="container">
-            <ProductGrid locale={locale} t={t} />
-          </div>
-        </section>
+        <FeatureBlocks t={t} />
+        <ProductGrid t={t} locale={locale} />
       </main>
 
       <Footer t={t} />
