@@ -1,5 +1,5 @@
 import Navbar from "../../components/Navbar";
-import Hero3D from "../../components/Hero3D";
+import Hero3DClient from "../../components/Hero3D.client";
 import FeatureBlocks from "../../components/FeatureBlocks";
 import ProductGrid from "../../components/ProductGrid";
 import Footer from "../../components/Footer";
@@ -16,19 +16,21 @@ export default function Page({ params }: { params: { locale: string } }) {
       <Navbar locale={locale} t={t} />
 
       <main>
-        {/* твоя секция hero */}
         <section className="section">
           <div className="container">
             <div className="grid cols-2" style={{ alignItems: "center" }}>
               <div>
                 <span className="badge">{t.brandLine}</span>
-                <h1 className="h1" style={{ marginTop: 12, whiteSpace: "pre-line" }}>
+                <h1
+                  className="h1"
+                  style={{ marginTop: 12, whiteSpace: "pre-line" }}
+                >
                   {t.heroTitle}
                 </h1>
               </div>
 
               <div>
-                <Hero3D />
+                <Hero3DClient />
               </div>
             </div>
           </div>
